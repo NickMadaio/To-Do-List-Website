@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dual Pane To‑Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left Pane: Add & Filter Controls -->
+    <div class="left-pane">
+      <h1>Add Task</h1>
+      <form id="task-form" class="input-container">
+        <input type="text" id="new-task" placeholder="Enter new task..." required />
+        <button type="submit" id="add-task">Add</button>
+      </form>
+      <div class="filter-container">
+        <select id="filter-tasks">
+          <option value="all" selected>All</option>
+          <option value="active">Active</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+    </div>
+    <!-- Right Pane: Task List -->
+    <div class="right-pane">
+      <h1>Task List</h1>
+      <ul id="task-list">
+        <!-- Tasks will be inserted here -->
+         
+      </ul>
+      <!-- <button id="clear-completed">Clear Completed</button> -->
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
