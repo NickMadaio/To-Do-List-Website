@@ -33,6 +33,34 @@
       <!-- <button id="clear-completed">Clear Completed</button> -->
     </div>
   </div>
-  <script src="index.js"></script>
+
+  <!-- Firebase Initialization -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBfldu_ImZ0PqZTWWUeRgCooLMFC-ob4EY",
+      authDomain: "to-do-list-1130c.firebaseapp.com",
+      projectId: "to-do-list-1130c",
+      storageBucket: "to-do-list-1130c.firebasestorage.app",
+      messagingSenderId: "98849074065",
+      appId: "1:98849074065:web:6334172ffc960c86fe8830",
+      measurementId: "G-B6242FQ4ET"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <!-- Your existing JavaScript file (ensure it is also module-based if using import) -->
+  <script type="module" src="index.js"></script>
+
 </body>
 </html>
